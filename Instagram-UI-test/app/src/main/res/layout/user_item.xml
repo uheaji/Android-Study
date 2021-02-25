@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_marginTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userprofile" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jjang_gu"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_menu"
+            android:layout_marginLeft="230dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/instagram_photo"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="4dp">
+
+        <info.androidhive.fontawesome.FontTextView
+            android:id="@+id/ftv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_heart"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"/>
+
+        <info.androidhive.fontawesome.FontTextView
+            android:id="@+id/ftv_comment"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_comment"
+            android:textSize="30dp"
+            android:layout_toRightOf="@+id/ftv_heart"/>
+
+        <info.androidhive.fontawesome.FontTextView
+            android:id="@+id/ftv_plane"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_paper_plane"
+            android:textSize="30dp"
+            android:layout_toRightOf="@+id/ftv_comment"/>
+
+        <info.androidhive.fontawesome.FontTextView
+            android:id="@+id/ftv_bookmark"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_bookmark"
+            android:textSize="30dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/user_like_image"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/userprofile"
+           android:layout_marginLeft="10dp"/>
+
+       <TextView
+           android:id="@+id/user_like_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="jjang_gu"
+           android:textColor="@android:color/black"
+           android:textStyle="bold"
+           android:layout_marginLeft="7dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="님"
+           android:textColor="@android:color/black"
+           android:layout_marginLeft="4dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="외"
+           android:textColor="@android:color/black"
+           android:layout_marginLeft="5dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="여러 명"
+           android:textStyle="bold"
+           android:textColor="@android:color/black"
+           android:layout_marginLeft="5dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="이 좋아합니다"
+           android:textColor="@android:color/black"
+           android:layout_marginLeft="3dp"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/user_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jjang_gu"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="13dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎈⚽😝"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="3dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_comment"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/instagram_photo"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a comment...."
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 Hours Ago"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"/>
+
+
+</LinearLayout>
