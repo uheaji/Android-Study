@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="연락처 수정"
+        android:textSize="30dp"
+        android:textColor="@android:color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image2"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_person" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_add_username2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Contact Name"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_add_useremail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Email"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="삭제"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:backgroundTint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="수정"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:backgroundTint="@android:color/white"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
